@@ -1,0 +1,11 @@
+includes{
+    include <Math>;
+    include <CDevStd>;
+}
+
+Write("Hell");
+
+repeat(10){
+    Write(i);
+}
+def i = Read();

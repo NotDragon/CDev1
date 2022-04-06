@@ -3,9 +3,5 @@ includes{
     include <CDevStd>;
 }
 
-Write("Hell");
-
-repeat(10){
-    Write(i);
-}
+Write("Wellcome to CDev");
 def i = Read();

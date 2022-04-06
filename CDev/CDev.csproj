@@ -11,12 +11,12 @@
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
       <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-      <OutputPath>C:\Users\mixal\source\repos\NuGet\bin\Debug\</OutputPath>
+      <OutputPath>C:\Coding\CDev\src\cs\CDev\CDev\bin\Debug\</OutputPath>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
       <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-      <OutputPath>C:\Users\mixal\source\repos\NuGet\bin\Release\</OutputPath>
+      <OutputPath>C:\Coding\CDev\src\cs\CDev\CDev\bin\Release\</OutputPath>
     </PropertyGroup>
 
     <ItemGroup>

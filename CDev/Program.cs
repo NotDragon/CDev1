@@ -32,27 +32,25 @@ namespace CDev
 		}
 	   
 	}
+
 	public class Program
 	{
 		static void Main(string[] args)
 		{
-			ProgramVariable.SetDValues();
-				
-			if (ProgramVariable.fileName is not null)
-			{
-				if (ProgramVariable.cdevExecuterContext is not null)
-					ProgramVariable.visitor.Visit(ProgramVariable.cdevExecuterContext);
-			}
-			
 			if (args.Length > 0)
-			{
-				ProgramVariable.fileName = args[0];
+			{ 
+				ProgramVariable.fileName = args[0]; 
 				Run(args[0]);
+			}
+			else
+			{
+				Imersive.Console.Logger.Error("Missing argument \"file name\"");
 			}
 		}
 
 		public static void Run(string fileName)
 		{
+			
 			string fileContents = File.ReadAllText(fileName);
 			
 			AntlrInputStream inputStream = new(fileContents);

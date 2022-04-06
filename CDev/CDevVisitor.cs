@@ -826,6 +826,7 @@ public class CDevVisitor : CDevBaseVisitor<object?>
 		var name = context.IDENTIFIER(0).GetText();
 		var vName = context.IDENTIFIER(1).GetText();
 		
+		//check if variable is decleard
 		
 
 		return null;
